@@ -189,9 +189,17 @@ layouts = [
     # layout.MonadWide(),
     # layout.RatioTile(),
     # layout.Tile(),
-    # layout.TreeTab(),
+    layout.TreeTab(
+        margin=5,
+        single_border_width=0,
+        single_margin=0,
+        border_focus="#51afef",
+        border_normal="#777777",
+        border_width=2,
+        sections = ['Internet', 'Terminales'],
+    ),
     # layout.VerticalTile(),
-    # layout.Zoomy(),
+    #layout.Zoomy(),
 ]
 
 widget_defaults = dict(
